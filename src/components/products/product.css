@@ -1,0 +1,89 @@
+.products {
+  /* width: 90%; */
+  margin-left: 5%;
+  height: auto;
+  margin-bottom: 10rem;
+}
+.products-top {
+  position: relative;
+}
+.products h2 {
+  font-size: 9rem;
+  font-family: syne;
+  font-weight: var(--font-semi-bold);
+}
+.left-star-line{
+  width: 50%;
+}
+/* .horizontal-line {
+  position: absolute;
+} */
+.slider-arrows {
+  position: absolute;
+  right: 3%;
+  bottom: 20px;
+  cursor: pointer;
+}
+.slider-arrows img {
+  margin-left: 3rem;
+}
+.products-bottom {
+  display: flex;
+  
+  gap: 3rem;
+}
+.category-sidebar {
+  
+  font-family: 'work sans';
+  font-size: 1.8rem;
+}
+.category-sidebar ul li {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.active {
+  font-weight: 600;
+  font-size: 2.6rem;
+  font-family: syne;
+}
+.products-carousel {
+  display: flex;
+  overflow-y: scroll;
+  gap: 2rem;
+}
+.show-for-mobile{
+  visibility: hidden;
+}
+.hide-for-mobile{
+  visibility: visible;
+}
+@media screen and (max-width: 900px) {
+  .products h2 {
+    font-size: 3rem;
+  }
+  .show-for-mobile {
+    visibility: visible;
+  }
+  .hide-for-mobile{
+    display: none;
+  }
+  .category-sidebar ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .category-sidebar li {
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Display ellipsis (...) for truncated text */
+    max-width: 100%;
+    margin-left: 1.5rem; /* Limit the maximum width of the li element */
+  }
+
+  .products-bottom {
+    flex-direction: column;
+  }
+}

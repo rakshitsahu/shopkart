@@ -1,0 +1,98 @@
+.hero {
+  height: 100vh;
+  background-color: var(--grayscale);
+  color: #fff;
+  overflow: hidden;
+}
+.hero-main {
+  
+  margin-top: 25px;
+  padding-left: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.orange-background {
+  position: absolute;
+  top: 25%;
+  right: 0px;
+  width: 70%;
+  height: 60%;
+  background-color: orange;
+  opacity: 0.5;
+  z-index: 1;
+}
+.hero-main-background {
+  position: absolute;
+  background: url('../../assets/human.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 0 right 10%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.hero-intro {
+  margin-top: 70px;
+  position: relative;
+  z-index: 2; 
+}
+.star {
+  position: absolute;
+  right: 3%;
+  width: 24%;
+  height: 76%;
+  /* bottom: 140px; */
+  bottom: 32%;
+}
+
+.hero-intro h1 {
+  /* font-size: var(--heading-one); */
+  font-size: 1350%;
+  font-family: syne;
+}
+.hero-intro h1 span {
+  display: block;
+}
+.hero-intro h1 span:first-child {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin-left: 30rem;
+}
+.see-more{
+  display: flex;
+  border: 1px solid;
+  font-size: 13px;
+  
+  width: 80px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-intro {
+    margin-top: 70px;
+    position: relative;
+    z-index: 2; 
+  }
+  .hero-intro h1 {
+    /* font-size: var(--heading-one); */
+    font-size: 500%;
+  }
+  .hero-intro h1 span:first-child {
+
+    margin-left: 5rem;
+  }
+  .hero {
+    height: 60vh;
+  }
+  .orange-background {
+    width: 100%;
+
+  }
+}

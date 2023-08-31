@@ -1,0 +1,197 @@
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-size: 4rem;
+  font-family: Poppins;
+  color: #ffffff;
+}
+
+.header__list {
+  font-size: 1.4rem;
+  font-family: 'work sans';
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.horizontal-line {
+  width: 90%;
+  margin: 0 auto;
+  height: 0.2rem;
+  background-color: #ffffff;
+}
+
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-family: 'work sans';
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+.navbar-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-submenu-container {
+  border: 1px solid white; 
+  width: 180px;
+  padding: 8px;
+  justify-content: space-around;
+  position: absolute;
+  visibility: hidden;
+}
+.navbar-submenu-container :hover{
+  visibility: visible;
+}
+
+.text-with-underline:hover ~ .navbar-submenu-container {
+  visibility: visible;
+  /* Your styles for classB when classA is hovered */
+}
+.navbar-submenu-item{
+  margin-bottom: 10px;
+}
+
+
+.text-with-underline {
+  text-decoration: none; /* Remove default underline */
+  text-underline-offset: 4px;
+}
+
+/* This style is applied when hovering over the element */
+.text-with-underline:hover {
+  
+  text-decoration: underline; /* Add underline on hover */
+}
+.hide-for-mobile{
+  visibility: visible;
+}
+
+
+/* for mobile navbar */
+
+/* Mobile menu icon */
+.mobile-navbar-center {
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+}
+.mobile-navbar-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-button:hover {
+  color: #ff0000;
+}
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 1rem;
+
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.mobile-overlay {
+  
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.mobile-overlay.open {
+  display: block;
+}
+
+/* Mobile navbar */
+.mobile-navbar {
+  font-size: 18px;
+  display: none;
+  position: fixed;
+  top: 12%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  z-index: 1001;
+  overflow-y: auto;
+}
+
+.mobile-navbar.open {
+  display: block;
+}
+
+.mobile-navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-navbar li {
+  padding: 1rem;
+  
+  font-size: 20px;
+}
+
+.mobile-navbar .navbar-submenu-container {
+  display: none;
+}
+
+.mobile-navbar li:hover .navbar-submenu-container {
+  display: block;
+}
+
+.mobile-navbar .navbar-submenu-item {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Position the content inside the overlay */
+
+.hide-for-desktop{
+  visibility: hidden;
+}
+@media screen and (max-width: 900px) {
+  h1 {
+      /* CSS rules for small screens */
+      font-size: 2rem;
+  }
+  .hide-for-mobile{
+    visibility: hidden;
+  }
+  .hide-for-desktop{
+    visibility: visible;
+  }
+}

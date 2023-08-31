@@ -1,0 +1,68 @@
+/* 
+  ================Importing Fonts================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Syne:wght@400;600;800&family=Work+Sans&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Syne', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+/* 
+  ================Variables================
+*/
+:root {
+  /* 
+      ----------Colors-----------
+  */
+  --primary-color: #f07e15;
+  --grayscale: #000000;
+  --greyscale: #161615;
+  /* 
+      ----------Typography-----------
+  */
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 800;
+
+  --heading-one: 13.5rem;
+  --heading-two: 9rem;
+
+  /* 
+      ----------Responsive Typography-----------
+  */
+  @media screen and (max-width: 1024px) {
+    :root {
+      --heading-one: 5.5rem;
+      --heading-two: 4rem;
+    }
+  }
+}
+
+/* 
+  ================Base================
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* overflow-x: hidden; */
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* 
+  ================Reusable CSS Classes================
+*/
+.container {
+  max-width: 1200px;
+}
+.small-container {
+  max-width: 398px;
+}

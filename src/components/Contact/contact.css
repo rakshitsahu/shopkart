@@ -1,0 +1,120 @@
+.contact {
+  background: url('../../assets/get-in-touch-bg.svg');
+  /* height: 52rem; */
+  min-height: 52rem;
+  font-family: syne;
+  color: #fff;
+}
+.contact-top {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+.contact-left {
+  font-size: 2.6rem;
+  font-weight: var(--font-semi-bold);
+  width: 40%;
+}
+.contact-left p {
+  opacity: 0.5;
+  color: #fff;
+}
+.contact-left p:not(:first-child) {
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-family: 'work sans';
+}
+.contact-right {
+  width: 60%;
+}
+input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(255, 255, 255, 0.5);
+  width: 55rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: syne;
+  font-size: 1.8rem;
+}
+input::placeholder {
+  font-family: 'work sans';
+  font-size: 1.8rem;
+}
+button {
+  background-color: transparent;
+  font-family: 'work sans';
+  font-size: 2.6rem;
+  color: var(--primary-color);
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  position: absolute;
+  top: -100px;
+  right: -10%;
+  cursor: pointer;
+}
+.contact-bottom {
+  font-size: var(--heading-one);
+  font-family: syne;
+  font-weight: 800;
+  margin: 0 auto;
+  width: 90%;
+}
+.contact-bottom p:nth-child(2) {
+  position: relative;
+  display: inline;
+}
+@media screen and (max-width: 1300px) {
+  .contact-bottom {
+    font-size: 10vw;
+  }
+}
+@media screen and (max-width: 1044px) {
+  .contact-bottom {
+    font-size: 9vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contact-top {
+    flex-direction: column;
+  }
+  .contact-left {
+    align-self: center;
+    text-align: center;
+  }
+  .contact-left p:first-child {
+    margin-bottom: 1rem;
+  }
+  .contact-bottom{
+    font-weight: 600;
+  }
+  button {
+    
+    width: 16rem;
+    height: 16rem;
+  }
+  input {
+    width: 30rem;
+
+  }
+}
+@media screen and (max-width: 754px) {
+  .contact-bottom {
+    font-size: 5.5rem;
+  }
+  button {
+
+    width: 8rem;
+    height: 8rem;
+    font-size: 1.4rem;
+    right: -40px;
+    top: 12px;
+  }
+}
+
+
