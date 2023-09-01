@@ -10,6 +10,7 @@
   padding-left: 8%;
   display: flex;
   flex-wrap: wrap;
+  height: 70%;
   position: relative;
 }
 .orange-background {
@@ -23,6 +24,7 @@
   z-index: 1;
 }
 .hero-main-background {
+  
   position: absolute;
   background: url('../../assets/human.svg');
   background-repeat: no-repeat;
@@ -36,7 +38,7 @@
   z-index: 1;
 }
 .hero-intro {
-  margin-top: 70px;
+  margin-top: 3%;
   position: relative;
   z-index: 2; 
 }
@@ -76,7 +78,7 @@
 
 @media screen and (max-width: 900px) {
   .hero-intro {
-    margin-top: 70px;
+    margin-top: 300px;
     position: relative;
     z-index: 2; 
   }
@@ -88,9 +90,7 @@
 
     margin-left: 5rem;
   }
-  .hero {
-    height: 60vh;
-  }
+
   .orange-background {
     width: 100%;
 

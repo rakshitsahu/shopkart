@@ -16,11 +16,11 @@ const Hero = () => {
         <h1>
           Fresh <span>2022</span> <span>Look</span>
         </h1>
-        <div className='see-more'>See more <img src = {vector}/></div>
+        
       </div>
       <img src={star} alt='' className='star' />
     </div>
-    
+    <div className='see-more'>See more <img src = {vector}/></div>
   </div>
   
   );
